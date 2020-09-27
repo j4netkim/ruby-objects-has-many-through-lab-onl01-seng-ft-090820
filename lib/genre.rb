@@ -21,12 +21,12 @@ class Genre
     Song.all.select do |song|
       song.genre == self
     end
-  end 
+  end
 
   def artists
     songs.collect do |song|
-      song.artist 
-    end 
+      song.artist
+    end
   end 
 
 
